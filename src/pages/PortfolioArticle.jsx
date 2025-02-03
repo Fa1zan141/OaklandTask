@@ -79,10 +79,6 @@ function PortfolioArticle() {
     </section>
 
     {/*Footer Section Of Portfolio Article Page */}
-    <section>
-        <Footer />
-    </section>
-
     </>
   );
 }

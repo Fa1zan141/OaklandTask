@@ -34,34 +34,34 @@ function Services() {
       </section>
 
     </div>
-    {/*Second Section Of Services Page*/}
-    <section>
-      <div className="p-4 sm:p-8 lg:p-20 w-full">
-        {sections.map((section, index) => (
-          <div key={index} className="border-t border-gray-700 divide-y-reverse">
-            <button
-              className="w-full flex justify-between items-center py-4 px-2 text-[24px] sm:text-[36px] lg:text-[48px] font-400 text-[#212529] transition-all"
-              onClick={() => toggleSection(index)}
-            >
-              <span className="truncate">{section}</span>
-              <ArrowDown
-                className={`transition-transform text-[#A6A6AB] ${openSection === index ? "rotate-180" : ""}`}
-              />
-            </button>
-            {openSection === index && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                className="p-4 text-[#212529] text-[14px] sm:text-[16px] lg:text-[18px]"
-              >
-                This Is My Data For {section} here.
-              </motion.div>
-            )}
-          </div>
-        ))}
+   {/* Second Section Of Services Page */}
+<section>
+  <div className="p-4 sm:p-8 lg:p-20 w-full">
+    {sections.map((section, index) => (
+      <div key={index} className="border-t border-gray-700 divide-y-reverse">
+        <button
+          className="w-full flex justify-between items-center py-4 px-2 text-[24px] sm:text-[36px] lg:text-[48px] font-400 text-[#212529] transition-all"
+          onClick={() => toggleSection(index)}
+        >
+          <span className="truncate">{section}</span>
+          <ArrowDown
+            className={`transition-transform text-[#A6A6AB] ${openSection === index ? "rotate-180" : ""}`}
+          />
+        </button>
+        {openSection === index && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto"  }}
+            exit={{ opacity: 0, height: 0 }}
+            className="p-4 text-[#212529] text-[14px] sm:text-[16px] lg:text-[18px]"
+          >
+            This Is My Data For {section} here.
+          </motion.div>
+        )}
       </div>
-    </section>
+    ))}
+  </div>
+</section>
     {/*Image Section Of Services Page*/}
     <section>
       <ImageText
@@ -77,13 +77,10 @@ function Services() {
         title="Proudly helping businesses"
         content="Explore our portfolio of remarkable projects where innovation and sustainability converge. Discover how we've transformed energy landscapes and elevated standards in the industry."
         linkText="View our Portfolio"
-        linkUrl="#"
+        linkUrl="/portfolio"
         />
     </section>
     {/*Footer Section Of Services Page*/}
-    <section>
-      <Footer/>
-    </section>
 
     </>
   )

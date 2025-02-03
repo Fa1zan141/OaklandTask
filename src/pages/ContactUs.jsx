@@ -73,11 +73,6 @@ function ContactUs() {
     </section>
 
 
-    {/*Footer Of Contact US Page*/}
-    <section>
-        <Footer/>
-    </section>
-
 
 
     </>

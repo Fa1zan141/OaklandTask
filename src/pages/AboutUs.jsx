@@ -52,10 +52,6 @@ function AboutUs() {
     <section className='flex justify-end items-end mb-20'>
     <Text paragraph3={paragraph3} paragraph4={paragraph4} />
     </section>
-    {/*Footer Section Of About US Page*/}
-    <section>
-        <Footer />
-    </section>
 
 
     </>

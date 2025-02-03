@@ -48,9 +48,6 @@ function PrivacyPolicy() {
     </section>
 
     {/*Footer Section Of Privacy-Poilcy Page*/}
-    <section>
-        <Footer />
-    </section>
     </>
   
   )

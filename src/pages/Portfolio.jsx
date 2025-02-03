@@ -157,15 +157,9 @@ function Portfolio() {
             title="Get in touch with us"
             content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."
             linkText="Contact Us"
-            linkUrl="#"
+            linkUrl="/contact-us"
         />
     </section>
-    {/* Footer Section Of Portfolio Page */}
-     <section>
-        <Footer/>
-    </section>
-
-
     </>
   );
 }

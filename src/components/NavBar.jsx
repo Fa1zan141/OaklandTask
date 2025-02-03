@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 function NavBar() {
@@ -12,7 +11,7 @@ function NavBar() {
   
   return (
     <>
-      <nav className="flex justify-between items-center p-8 w-full fixed top-0 left-0 z-50">
+      <nav className="max-w-full flex justify-between items-center p-8 w-full fixed top-0 left-0 z-50 bg-[#212529]">
         <img src="/Logo.svg" alt="Logo" className="h-12 w-72 cursor-pointer" onClick={Homenavigate} />
         <ul className="flex justify-end w-full items-center gap-8 pr-12 text-[#FFFFFF] text-[18px] font-Inter">
         <li className="cursor-pointer" ><Link to="/about-us" className="hover:underline">About Us</Link></li>
