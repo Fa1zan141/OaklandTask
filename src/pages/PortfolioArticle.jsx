@@ -1,0 +1,90 @@
+import React from 'react';
+import DarkNavBar from '../components/DarkNavBar';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import Footer from '../components/Footer';
+import InfoSection from '../components/InfoSection';
+function PortfolioArticle() {
+  return (
+    <>
+      {/* Top Section of Portfolio Article Page */}
+      <DarkNavBar />
+      
+      <div className="flex flex-col gap-4 md:gap-6 pt-40 md:pt-[400px] px-4 md:px-10 items-start justify-start min-h-[640px] bg-[#F4F4F4]">
+        
+        {/* Portfolio Tagline */}
+        <div className="text-[#A6A6AB] uppercase tracking-widest text-[14px] md:text-[18px]">
+          Portfolio
+        </div>
+        
+        {/* Article Title */}
+        <h1 className="text-[32px] sm:text-[48px] md:text-[64px] font-400 text-[#212529] mt-2">
+          Deloitte Building, London
+        </h1>
+        
+        {/* Navigation Buttons */}
+        <div className="flex items-center justify-between w-full max-w-screen-lg mt-4 ">
+          <button className="text-gray-400 hover:text-gray-700">
+            <ArrowLeft size={24} />
+          </button>
+          <button className="text-gray-400 hover:text-gray-700">
+            <ArrowRight size={24} />
+          </button>
+        </div>
+      </div>
+      {/*2nd Section Of Portfolio Article Page */}
+      <section className="flex justify-end px-4 md:px-10 py-10">
+    <div className="flex flex-col w-full max-w-[1000px] p-4 md:p-20 bg-white">
+        <p className='text-[18px] text-[#424649] '>
+        Oakland C.E. has been at the forefront of energy transformation and sustainability for over two decades. Our commitment to innovation and expertise in energy efficiency has allowed us to undertake remarkable projects across the globe. One such endeavor that stands as a testament to our dedication to sustainable energy solutions is the Deloitte Building in the heart of London.
+        </p>
+        <br />
+        <p className='text-[18px] text-[#424649] '>
+        The Deloitte Building, an iconic structure in the bustling financial district of London, sought to reduce its carbon footprint and enhance its operational efficiency. Deloitte, a global leader in professional services, recognized the importance of adopting sustainable practices not only as a corporate responsibility but also as a strategic advantage. Oakland C.E. was entrusted with the mission to revolutionize the building's energy consumption patterns and lighting systems, aligning them with a greener and more sustainable future.
+        </p>
+        <br />
+        <p className='text-[18px] text-[#424649] '>
+        Our team of experts meticulously conducted an energy audit, scrutinizing every aspect of the Deloitte Building's energy consumption. This thorough analysis allowed us to identify areas where energy wastage was occurring and formulate a comprehensive energy efficiency strategy. Our recommendations ranged from optimizing HVAC systems to implementing advanced building management systems that dynamically adjusted lighting, temperature, and power usage based on occupancy and natural lighting conditions.
+        </p>
+    </div>
+    </section>
+   {/* 3rd Section of Portfolio Article Page */}
+    <section className="p-6 md:p-20 flex flex-col md:flex-col md:gap-20 items-center gap-10">
+    {/* Left Image - Larger */}
+    <div className="w-full md:w-2/3 flex mr-[400px] md:pl-10">
+        <img
+        className="w-full max-w-[1050px] h-auto md:h-[600px] object-cover shadow-lg"
+        src="/PortfolioArticleImage.svg"
+        alt="Portfolio Image"
+        />
+    </div>
+
+    {/* Right Image - Smaller */}
+    <div className="w-full md:w-1/3 ml-[400px] md:pr-10">
+        <img
+        className="w-full max-w-[700px] h-auto md:h-[450px] md:w-[780px] object-cover shadow-lg"
+        src="/ArticleImage.svg"
+        alt="Article Image"
+        />
+    </div>
+    </section>
+
+    {/* 4th Section of Portfolio Article Page */}
+    <section className='p-20'>
+    <InfoSection
+            title="Get in touch with us"
+            content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."
+            linkText="Contact Us"
+            linkUrl="#"
+            />
+    </section>
+
+    {/*Footer Section Of Portfolio Article Page */}
+    <section>
+        <Footer />
+    </section>
+
+    </>
+  );
+}
+
+export default PortfolioArticle;

@@ -2,7 +2,15 @@ import React, { useState } from 'react';
 import Button from '../components/Button';
 import HomePageSection from '../components/HomePageSection';
 import InfoSection from '../components/InfoSection';
+import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function HomePage() {
+  const navigate = useNavigate();
+  function ContactUsnavigate(){
+    navigate('/contact-us')
+  }
+ 
 
   return (
     <>
@@ -11,11 +19,11 @@ function HomePage() {
         {/* Navbar */}
         <nav className="w-full absolute top-0 bg-transparent z-20 p-8">
           <ul className="flex flex-wrap justify-end md:justify-end w-full items-center gap-6 md:gap-8 pr-8 text-white text-base md:text-lg">
-            <li className="cursor-pointer">About Us</li>
-            <li className="cursor-pointer">Services</li>
-            <li className="cursor-pointer">Portfolio</li>
+            <li className="cursor-pointer" ><Link to="/about-us" className="hover:underline">About Us</Link></li>
+            <li className="cursor-pointer" ><Link to="/services" className="hover:underline">Services</Link></li>
+            <li className="cursor-pointer" ><Link to="/portfolio" className="hover:underline">Portfolio</Link></li>
             <li>
-              <button className="bg-[#FFFFFF4D] text-white rounded-full py-2 px-4 md:px-6 md:py-3 cursor-pointer w-full md:w-auto">
+              <button onClick={ContactUsnavigate} className="bg-[#FFFFFF4D] text-white rounded-full py-2 px-4 md:px-6 md:py-3 cursor-pointer w-full md:w-auto">
                 Contact Us
               </button>
             </li>
@@ -51,23 +59,29 @@ function HomePage() {
 
       {/*HomePage 3rd Section*/}
       <section>
-      <div className="w-full flex flex-col justify-between lg:flex-row items-center bg-gray-200 p-20 h-[500px]">
-      <img
+        <div className="flex flex-col lg:flex-row items-center bg-gray-200 p-6 sm:p-10 md:p-20 h-auto lg:h-[500px]">
+        <img
           src="/DeepKnowledgeImage.svg"
           alt="Building"
           className=" position-absolute top-[-12px] h-[500px]"
         />
-        <InfoSection/>
-      </div>
+          <InfoSection />
+        </div>
       </section>
-      {/*Homepage 4th Section*/}
-      <section className='p-20 '>
+
+      {/*HomePage 4th Section*/}
+      <section className="px-6 py-12 sm:px-10 md:p-20 bg-gray-50">
         <InfoSection
-        title="Get in touch with us"
-        content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."
-        linkText="Contact Us"
-        linkUrl="#"
+          title="Get in touch with us"
+          content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."
+          linkText="Contact Us"
+          linkUrl="#"
         />
+      </section>
+      {/*Footer section*/}
+      <section>
+        <Footer/>
+
       </section>
       
     </>
