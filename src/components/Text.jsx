@@ -4,7 +4,7 @@ function Text({ paragraph1, paragraph2, paragraph3, paragraph4 }) {
   return (
     <>
       {/* Paragraph Group 1 */}
-      <div className="flex flex-col gap-4 px-4 sm:px-8 lg:px-20">
+      <div className="flex flex-col gap-4 py-10 sm:px-8 lg:px-0">
         <p className="text-[#212529] text-base sm:text-lg font-normal max-w-3xl mx-auto">
           {paragraph1}
         </p>

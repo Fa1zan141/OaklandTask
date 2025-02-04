@@ -8,7 +8,7 @@ function PortfolioArticle() {
       {/* Top Section of Portfolio Article Page */}
 <DarkNavBar />
 
-<div className="flex flex-col justify-end items-start gap-4 sm:gap-6 pb-20 sm:pt-[400px] px-4 sm:px-8 md:px-16 items-start justify-start min-h-screen bg-[#F4F4F4]">
+<div className="flex flex-col justify-end items-start gap-4 sm:gap-6 pb-10 sm:pt-[400px] px-10 lg:px-10 sm:px-8 md:px-16 items-start justify-start min-h-screen bg-[#F4F4F4]">
   
   {/* Portfolio Tagline */}
   <div className="text-[#A6A6AB] uppercase tracking-widest text-[14px] sm:text-[16px] md:text-[18px]">
@@ -69,7 +69,7 @@ function PortfolioArticle() {
     </section>
 
     {/* 4th Section of Portfolio Article Page */}
-    <section className='p-20'>
+    <section className='p-0 lg:p-0'>
     <InfoSection
             title="Get in touch with us"
             content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."

@@ -1,6 +1,4 @@
-import React from 'react'
 import DarkNavBar from '../components/DarkNavBar'
-import Footer from '../components/Footer'
 function ContactUs() {
   return (
     <>
@@ -18,9 +16,9 @@ function ContactUs() {
     </div>
     {/*Top Section Of Contact US Page*/}
     <section>
-    <div className="flex flex-col lg:flex-row justify-between items-start p-16 text-white font-400">
+    <div className="flex flex-col lg:flex-row justify-between items-start p-6 lg:p-16 text-white font-400">
       {/* Left Side: Location & Open Hours */}
-      <div className="lg:w-1/3 w-full mb-8 lg:mb-0">
+      <div className=" lg:w-1/3 w-full mb-8 lg:mb-0">
         <h2 className="text-[#212529] text-[40px] mb-10 ">Location</h2>
         <p className="mt-2 text-[#424649] ">Avenida Marta Lopes, Nº2</p>
         <p className="text-[#424649]">8400-401 Vila Real, Portugal</p>
@@ -56,7 +54,7 @@ function ContactUs() {
     <section>
   <div className="flex flex-col md:flex-row justify-center items-center p-20 gap-10 mb-20">
         {/* Left Side - Image of Map */}
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27212.77590857159!2d74.34700550000001!3d31.5077596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1738579099996!5m2!1sen!2s" width="600" height="450" className='md:w-[810px] h-[510px] rounded-md' allowfullscreen="" loading="lazy" ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27212.77590857159!2d74.34700550000001!3d31.5077596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1738579099996!5m2!1sen!2s" width="600" height="450" className='w-[400px] lg:w-[810px] h-[510px] rounded-md' allowfullscreen="" loading="lazy" ></iframe>
         
         {/* Right Side - Image */}
         <img

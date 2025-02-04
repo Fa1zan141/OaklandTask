@@ -30,7 +30,7 @@ function HomePage() {
       <section>
         <HomePageSection />
         <div className="flex justify-end w-full p-6 md:p-20 gap-6 ">
-          <p className="text-[#212529] text-left font-400 w-full md:w-[820px] text-[18px] leading-[25px]">
+          <p className="text-[#212529] text-left py-10 font-400 w-full md:w-[820px] text-[18px] leading-[25px]">
             Leading the market for two decades, we have been experts in energy efficiency. With an unwavering commitment to innovation, we offer tailored solutions for projects of all sizes. From LED lighting to photovoltaic energy and electric mobility, our dedicated team works tirelessly to deliver cutting-edge results. We are committed to shaping a more sustainable and efficient energy future.
           </p>
         </div>
@@ -38,7 +38,7 @@ function HomePage() {
 
        {/*HomePage 3rd Section*/}
        <section>
-        <div className="flex flex-col lg:flex-row items-center bg-gray-200 p-6 sm:p-10 md:p-20 h-auto lg:h-[500px]">
+        <div className="flex flex-col lg:flex-row items-center bg-gray-200 p-0 sm:p-10 md:p-20 h-auto lg:h-[500px]">
         <img
           src="/DeepKnowledgeImage.svg"
           alt="Building"
@@ -52,7 +52,7 @@ function HomePage() {
       </section>
 
       {/* HomePage 4th Section */}
-      <section className="px-6 py-12 sm:px-10 bg-gray-50">
+      <section className="p-0 py-12 sm:px-10 bg-gray-50">
         <InfoSection
           title="Get in touch with us"
           content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."

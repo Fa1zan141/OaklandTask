@@ -72,7 +72,7 @@ function Portfolio() {
 
     {/* 2nd Section Of Portfolio Page */}
     <section className="bg-white  py-10 md:px-10 lg:px-20">
-    <div className="max-w-4xl mt-10">
+    <div className="px-6 lg:px-0 max-w-4xl mt-10">
         <h2 className="text-[40px] sm:text-4xl font-400 text-[#212529]">
         The distinction that sets us Apart in the industry
         </h2>
@@ -81,7 +81,7 @@ function Portfolio() {
         </p>
     </div>
 
-    <div className="mt-10 flex flex-col sm:flex-row items-start gap-8">
+    <div className=" px-6 lg:px-0 mt-10 flex flex-col sm:flex-row items-start gap-8">
         {/* Innovation */}
         <div className="flex items-center gap-4">
         <div className="p-3 rounded-lg">
@@ -110,7 +110,7 @@ function Portfolio() {
 
     {/* Images Section Of Portfolio Page */}
     <section>
-    <div className="p-4 md:p-10 lg:px-20 bg-[#F4F4F4]">
+    <div className="p-6 md:p-10 lg:px-20 bg-[#F4F4F4]">
         {/* Filter Buttons */}
         <div className="flex flex-wrap gap-3 mb-20">
         {categories.map((category) => (
@@ -152,7 +152,7 @@ function Portfolio() {
 
 
     {/* 2nd Last Section Of Portfolio Page */}
-    <section className='p-10'>
+    <section className='px-0 lg:p-10'>
        <InfoSection
             title="Get in touch with us"
             content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."

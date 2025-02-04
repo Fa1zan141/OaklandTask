@@ -13,7 +13,7 @@ function AboutUs() {
      {/*Top Section Of About US Page*/}
      <div className="flex flex-col justify-end items-start h-screen bg-[#F4F4F4]">
       <DarkNavBar />
-      <section className="flex flex-col items-start sm:px-10 px-4 md:px-16 ">
+      <section className="flex flex-col px-6 items-start sm:px-10 md:px-20 ">
         <h1 className="text-[48px] sm:text-5xl text-[#212529] mb-12 font-400">
           About Us
         </h1>
@@ -27,7 +27,7 @@ function AboutUs() {
 
     {/*Second Section Of About US Page*/}
     <section>
-      <div className=" p-20 max-w-full md:grid-cols-2 gap-8 items-center">
+      <div className="px-6 lg:p-20 max-w-full md:grid-cols-2 gap-8 items-center">
         {/* Text Section */}
         <div>
         <h1 className="text-[28px] sm:text-[36px] md:text-[40px] text-[#424649] font-normal leading-snug max-w-3xl mb-12">
@@ -44,7 +44,7 @@ function AboutUs() {
       />
       </div>
         </div>
-    <section className='flex flex-col justify-start items-start mb-20 pl-20 '>
+    <section className='flex flex-col justify-start items-start mb-20 lg:pl-20 pl-6'>
         <Text paragraph1={paragraph1} paragraph2={paragraph2} />
     </section>
     </section>

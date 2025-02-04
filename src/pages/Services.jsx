@@ -72,7 +72,7 @@ function Services() {
       />
     </section>
     {/*Second Last Section Of Services Page*/}
-    <section className="p-10">
+    <section className="lg:pl-10 pl-0">
         <InfoSection
         title="Proudly helping businesses"
         content="Explore our portfolio of remarkable projects where innovation and sustainability converge. Discover how we've transformed energy landscapes and elevated standards in the industry."

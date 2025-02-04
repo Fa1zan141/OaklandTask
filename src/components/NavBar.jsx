@@ -1,25 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import { Menu } from 'lucide-react'; 
+import { Link, useNavigate } from 'react-router-dom';
+import { Menu, X } from 'lucide-react'; 
 
 function NavBar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Navigation functions
-  function Homenavigate() {
-    navigate('/');
-  }
-
-  function ContactUsnavigate() {
-    navigate('/contact-us');
-  }
-
-  // Toggle the mobile menu visibility
-  function toggleMenu() {
-    setIsMenuOpen(!isMenuOpen);
-  }
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <>
@@ -28,14 +15,12 @@ function NavBar() {
         <img
           src="/Logo.svg"
           alt="Logo"
-          className="h-12 w-72 cursor-pointer"
-          onClick={Homenavigate}
+          className="h-12 w-auto cursor-pointer"
+          onClick={() => navigate('/')}
         />
 
-        {/* Navigation Links */}
-        <ul
-          className={`lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row items-center gap-8 lg:gap-10 text-white text-[18px] font-Inter transition-all duration-300 ease-in-out`}
-        >
+        {/* Desktop Navigation */}
+        <ul className="hidden lg:flex items-center gap-10 text-white text-lg">
           <li className="cursor-pointer">
             <Link to="/about-us" className="hover:underline">About Us</Link>
           </li>
@@ -47,17 +32,52 @@ function NavBar() {
           </li>
           <li>
             <button
-              onClick={ContactUsnavigate}
-              className="bg-[#FFFFFF4D] text-white rounded-full py-2 px-6 cursor-pointer hover:bg-[#ffffff80] transition duration-200"
+              onClick={() => navigate('/contact-us')}
+              className="bg-white text-black rounded-full py-2 px-6 cursor-pointer hover:bg-gray-200 transition"
             >
               Contact Us
             </button>
           </li>
         </ul>
-        {/* Hamburger Icon for Mobile */}
-        <div className="lg:hidden flex items-center" onClick={toggleMenu}>
-          <Menu className="w-8 h-8 text-white" />
+
+        {/* Mobile/Tablet Navigation Icon */}
+        <div className="lg:hidden flex items-center">
+          {isMenuOpen ? (
+            <X className="w-8 h-8 text-white" onClick={toggleMenu} />
+          ) : (
+            <Menu className="w-8 h-8 text-white" onClick={toggleMenu} />
+          )}
         </div>
+      </nav>
+
+      {/* Mobile/Tablet Navigation */}
+      <nav
+        className={`lg:hidden sm:hidden absolute top-20 left-0 w-full transition-transform duration-300 ${
+          isMenuOpen ? 'translate-y-0' : '-translate-y-full'
+        }`}
+      >
+        <ul className="flex flex-col items-center gap-6 py-20 text-white">
+          <li>
+            <Link to="/about-us" className="hover:underline">About Us</Link>
+          </li>
+          <li>
+            <Link to="/services" className="hover:underline">Services</Link>
+          </li>
+          <li>
+            <Link to="/portfolio" className="hover:underline">Portfolio</Link>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                navigate('/contact-us');
+              }}
+              className="bg-white text-black rounded-full py-2 px-6 hover:bg-gray-200"
+            >
+              Contact Us
+            </button>
+          </li>
+        </ul>
       </nav>
     </>
   );
