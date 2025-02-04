@@ -23,14 +23,19 @@ const HomePageSection = () => {
   return (
     <section>
       <div className="flex flex-col gap-6 p-8 sm:p-12 md:p-20">
-        <h2 className="text-[#212529] text-3xl md:text-[40px] font-medium font-Inter">Areas of Expertise</h2>
-        <p className="text-[#424649] max-w-full sm:max-w-xl">
+        <h2 className="text-[#212529] text-[40px] md:text-[40px] font-medium font-Inter">Areas of Expertise</h2>
+        <p className="text-[#424649] max-w-full text-[18px] sm:max-w-xl">
           Whether for small or large-scale projects, we are committed to delivering cutting-edge results, contributing to a more sustainable and innovative energy future.
         </p>
       </div>
-      <div className=" sm:px-8 md:px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="sm:px-8 md:px-20 lg:px-20">
+      <div className="sm:px-8 md:px-20 lg:px-0 overflow-x-auto">
+      <div className="flex flex-row gap-6  ">
         {HomePageSections.map((area, index) => (
-          <div key={index} className="relative group overflow-hidden rounded-2xl shadow-lg w-full">
+          <div
+            key={index}
+            className="relative shrink-0 lg:flex-1 group overflow-hidden rounded-2xl shadow-lg w-full  sm:w-[500px]"
+          >
             <img
               src={area.image}
               alt={area.title}
@@ -42,6 +47,9 @@ const HomePageSection = () => {
           </div>
         ))}
       </div>
+    </div>
+
+    </div>
     </section>
   );
 };
