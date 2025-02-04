@@ -22,7 +22,7 @@ function Services() {
   return (
     <>
      {/*Top Section Of Services Page*/}
-     <div className="flex flex-col justify-end items-start min-h-[640px] bg-[#212529]">
+     <div className="flex flex-col justify-end items-start h-screen bg-[#212529]">
       <NavBar />
       <section className="flex flex-col items-start sm:px-10 px-4 md:px-16 ">
         <h1 className="text-[64px] sm:text-5xl text-[#FFFFFF] mb-6 font-400">

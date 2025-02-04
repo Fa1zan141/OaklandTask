@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { Menu } from 'lucide-react'; // Import Lucid's Menu icon
+import { Menu } from 'lucide-react'; 
 
 function NavBar() {
   const navigate = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Navigation functions
   function Homenavigate() {
@@ -32,14 +32,9 @@ function NavBar() {
           onClick={Homenavigate}
         />
 
-        {/* Hamburger Icon for Mobile */}
-        <div className="lg:hidden flex items-center" onClick={toggleMenu}>
-          <Menu className="w-8 h-8 text-white" /> 
-        </div>
-
         {/* Navigation Links */}
         <ul
-          className={`lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row items-center gap-8 lg:gap-10 text-white text-[18px] font-Inter`}
+          className={`lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row items-center gap-8 lg:gap-10 text-white text-[18px] font-Inter transition-all duration-300 ease-in-out`}
         >
           <li className="cursor-pointer">
             <Link to="/about-us" className="hover:underline">About Us</Link>
@@ -53,12 +48,16 @@ function NavBar() {
           <li>
             <button
               onClick={ContactUsnavigate}
-              className="bg-[#FFFFFF4D] text-white rounded-full py-2 px-6 cursor-pointer"
+              className="bg-[#FFFFFF4D] text-white rounded-full py-2 px-6 cursor-pointer hover:bg-[#ffffff80] transition duration-200"
             >
               Contact Us
             </button>
           </li>
         </ul>
+        {/* Hamburger Icon for Mobile */}
+        <div className="lg:hidden flex items-center" onClick={toggleMenu}>
+          <Menu className="w-8 h-8 text-white" />
+        </div>
       </nav>
     </>
   );

@@ -58,7 +58,7 @@ function Portfolio() {
   return (
     <>
     {/* Top Section Of Portfolio Page */}
-      <div className="flex flex-col justify-end items-start min-h-screen bg-[url(/PortfolioBg.svg)] bg-cover bg-center">
+      <div className="flex flex-col justify-end items-start h-screen bg-[url(/PortfolioBg.svg)] bg-cover bg-center">
         <NavBar />
         <section className="flex flex-col items-start px-4 sm:px-10 md:px-16 py-8 md:py-16">
           <h1 className="text-[48px] sm:text-5xl text-[#ffffff] mb-12 font-400">

@@ -6,30 +6,31 @@ function PortfolioArticle() {
   return (
     <>
       {/* Top Section of Portfolio Article Page */}
-      <DarkNavBar />
-      
-      <div className="flex flex-col gap-4 md:gap-6 pt-40 md:pt-[400px] px-4 md:px-10 items-start justify-start min-h-[640px] bg-[#F4F4F4]">
-        
-        {/* Portfolio Tagline */}
-        <div className="text-[#A6A6AB] uppercase tracking-widest text-[14px] md:text-[18px]">
-          Portfolio
-        </div>
-        
-        {/* Article Title */}
-        <h1 className="text-[32px] sm:text-[48px] md:text-[64px] font-400 text-[#212529] mt-2">
-          Deloitte Building, London
-        </h1>
-        
-        {/* Navigation Buttons */}
-        <div className="flex items-center justify-between w-full max-w-screen-lg mt-4 ">
-          <button className="text-gray-400 hover:text-gray-700">
-            <ArrowLeft size={24} />
-          </button>
-          <button className="text-gray-400 hover:text-gray-700">
-            <ArrowRight size={24} />
-          </button>
-        </div>
-      </div>
+<DarkNavBar />
+
+<div className="flex flex-col justify-end items-start gap-4 sm:gap-6 pb-20 sm:pt-[400px] px-4 sm:px-8 md:px-16 items-start justify-start min-h-screen bg-[#F4F4F4]">
+  
+  {/* Portfolio Tagline */}
+  <div className="text-[#A6A6AB] uppercase tracking-widest text-[14px] sm:text-[16px] md:text-[18px]">
+    Portfolio
+  </div>
+  
+  {/* Article Title */}
+  <h1 className="text-[24px] sm:text-[40px] md:text-[56px] lg:text-[64px] font-400 text-[#212529] mt-2">
+    Deloitte Building, London
+  </h1>
+  
+  {/* Navigation Buttons */}
+  <div className="flex items-center justify-between w-full mt-4">
+    <button className="text-gray-400 hover:text-gray-700">
+      <ArrowLeft size={24} />
+    </button>
+    <button className="text-gray-400 hover:text-gray-700">
+      <ArrowRight size={24} />
+    </button>
+  </div>
+</div>
+
       {/*2nd Section Of Portfolio Article Page */}
       <section className="flex justify-end px-4 md:px-10 py-10">
     <div className="flex flex-col w-full max-w-[1000px] p-4 md:p-20 bg-white">

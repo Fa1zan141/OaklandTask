@@ -7,23 +7,11 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import PortfolioArticle from "./pages/PortfolioArticle";
 import Portfolio from "./pages/Portfolio";
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
 
 const App = () => {
-  const routeProps = {
-    "/": { logoSrc: "/Logo.svg", buttonColor: "#FFFFFF4D" },
-    "/services": { logoSrc: "/Logo.svg", buttonColor: "#FFFFFF4D" },
-    "/portfolio": { logoSrc: "/Logo.svg", buttonColor: "#FFFFFF4D" },
-    "/contact-us": { logoSrc: "/DarkLogo.svg", buttonColor: "#F4F4F4" },
-    "/about-us": { logoSrc: "/DarkLogo.svg", buttonColor: "#FFFFFF4D" },
-    "/privacy-policy": { logoSrc: "/DarkLogo.svg", buttonColor: "#F4F4F4" },
-  };
-
-  const location = useLocation();
 
   return (
     <>
-      <NavBar {...routeProps[location.pathname]} />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about-us" element={<AboutUs />} />

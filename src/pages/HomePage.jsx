@@ -9,14 +9,11 @@ function HomePage() {
   return (
     <>
       {/* Home Page Section */}
-      <section className="flex flex-col md:flex-row items-center justify-center w-full h-screen relative">
-        {/* Navbar */}
-        <NavBar />
-
-        {/* Left Content */}
-        <div className="bg-[#212529] w-full sm:p-10 md:w-1/2 h-full flex flex-col justify-between pt-8 md:px-16">
-          <div src="" alt="" className="h-12 w-48" />
-          <div className="text-white gap-6 flex flex-col pb-12 px-4 md:px-0">
+       {/*Top Section Of About US Page*/}
+     <div className="flex flex-col justify-end items-start h-screen bg-[url(/HomeBg.svg)] bg-cover bg-no-repeat">
+      <NavBar />
+      <section className="flex flex-col items-start sm:px-10 px-4 md:px-16 ">
+      <div className="text-white gap-6 flex flex-col pb-12 px-4 md:px-0">
             <h1 className="text-[40px] md:text-[64px] font-light leading-tight md:leading-[77px]">
               Redefining <br /> Energy
             </h1>
@@ -25,10 +22,9 @@ function HomePage() {
             </p>
             <Button />
           </div>
-        </div>
-        {/* Right Content */}
-        <div className="w-full md:w-1/2 h-full bg-[url(/HomePageImage.svg)] bg-cover bg-center pt-28 md:pt-0"></div>
       </section>
+
+    </div>
 
       {/* Home Page Second Section */}
       <section>
