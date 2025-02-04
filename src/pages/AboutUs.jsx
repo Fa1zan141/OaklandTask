@@ -30,7 +30,10 @@ function AboutUs() {
       <div className=" p-20 max-w-full md:grid-cols-2 gap-8 items-center">
         {/* Text Section */}
         <div>
-          <h1 className="text-[40px] w-[780px] text-[#424649] md:text-[40px] font-400 mb-20">Innovation. <br /> Guiding our journey from the start.</h1>
+        <h1 className="text-[28px] sm:text-[36px] md:text-[40px] text-[#424649] font-normal leading-snug max-w-3xl mb-12">
+          Innovation. <br /> Guiding our journey from the start.
+        </h1>
+
           {/* Image Section */}
         {/* Image Section */}
         <ImageText

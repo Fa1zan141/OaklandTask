@@ -15,7 +15,6 @@ function ContactUs() {
         Our team is here to assist you on your journey towards a sustainable and efficient energy future.
         </p>
       </section>
-
     </div>
     {/*Top Section Of Contact US Page*/}
     <section>
@@ -32,7 +31,7 @@ function ContactUs() {
       </div>
 
       {/* Right Side: Contact Form */}
-      <div className="lg:w-2/3 w-full p-6 rounded-lg">
+      <div className="lg:w-2/3 w-full rounded-lg">
         <h2 className="text-[#212529] text-[40px] mb-6">Form</h2>
         <form className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
