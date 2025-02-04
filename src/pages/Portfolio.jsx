@@ -71,8 +71,8 @@ function Portfolio() {
       </div>
 
     {/* 2nd Section Of Portfolio Page */}
-    <section className="bg-white  py-12 px-4 md:px-16 lg:px-20">
-    <div className="max-w-4xl">
+    <section className="bg-white  py-10 md:px-10 lg:px-20">
+    <div className="max-w-4xl mt-10">
         <h2 className="text-[40px] sm:text-4xl font-400 text-[#212529]">
         The distinction that sets us Apart in the industry
         </h2>
@@ -110,9 +110,9 @@ function Portfolio() {
 
     {/* Images Section Of Portfolio Page */}
     <section>
-    <div className="p-4 md:p-20 bg-[#F4F4F4]">
+    <div className="p-4 md:p-10 lg:px-20 bg-[#F4F4F4]">
         {/* Filter Buttons */}
-        <div className="flex flex-wrap gap-3 mb-6">
+        <div className="flex flex-wrap gap-3 mb-20">
         {categories.map((category) => (
             <button
             key={category}

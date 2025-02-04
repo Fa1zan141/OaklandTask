@@ -4,7 +4,7 @@ import {ArrowDown} from 'lucide-react'
 import { motion } from "framer-motion";
 import ImageText from '../components/ImageText';
 import InfoSection from '../components/InfoSection';
-import Footer from '../components/Footer';
+
 
 function Services() {
     const sections = [
@@ -38,7 +38,7 @@ function Services() {
 <section>
   <div className="p-4 sm:p-8 lg:p-20 w-full">
     {sections.map((section, index) => (
-      <div key={index} className="border-t border-gray-700 divide-y-reverse">
+      <div key={index} className="border-t border-gray-700">
         <button
           className="w-full flex justify-between items-center py-4 px-2 text-[24px] sm:text-[36px] lg:text-[48px] font-400 text-[#212529] transition-all"
           onClick={() => toggleSection(index)}
@@ -53,7 +53,7 @@ function Services() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto"  }}
             exit={{ opacity: 0, height: 0 }}
-            className="p-4 text-[#212529] text-[14px] sm:text-[16px] lg:text-[18px]"
+            className="pl-4 text-[#212529] text-[14px] sm:text-[16px] lg:text-[18px]"
           >
             This Is My Data For {section} here.
           </motion.div>

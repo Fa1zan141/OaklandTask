@@ -57,11 +57,7 @@ function ContactUs() {
     <section>
   <div className="flex flex-col md:flex-row justify-center items-center p-20 gap-10 mb-20">
         {/* Left Side - Image of Map */}
-        <img
-        src="/Map.svg"
-        alt="Map"
-        className="w-full md:w-[920px] h-[510px] "
-        />
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27212.77590857159!2d74.34700550000001!3d31.5077596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1738579099996!5m2!1sen!2s" width="600" height="450" className='md:w-[810px] h-[510px] rounded-md' allowfullscreen="" loading="lazy" ></iframe>
         
         {/* Right Side - Image */}
         <img

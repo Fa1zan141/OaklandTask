@@ -1,7 +1,6 @@
 import React from 'react';
 import DarkNavBar from '../components/DarkNavBar';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import Footer from '../components/Footer';
 import InfoSection from '../components/InfoSection';
 function PortfolioArticle() {
   return (
@@ -48,9 +47,9 @@ function PortfolioArticle() {
     </div>
     </section>
    {/* 3rd Section of Portfolio Article Page */}
-    <section className="p-6 md:p-20 flex flex-col md:flex-col md:gap-20 items-center gap-10">
+    <section className='flex flex-col gap-12 p-20'>
     {/* Left Image - Larger */}
-    <div className="w-full md:w-2/3 flex mr-[400px] md:pl-10">
+    <div className="flex">
         <img
         className="w-full max-w-[1050px] h-auto md:h-[600px] object-cover shadow-lg"
         src="/PortfolioArticleImage.svg"
@@ -59,9 +58,9 @@ function PortfolioArticle() {
     </div>
 
     {/* Right Image - Smaller */}
-    <div className="w-full md:w-1/3 ml-[400px] md:pr-10">
+    <div className="flex justify-end">
         <img
-        className="w-full max-w-[700px] h-auto md:h-[450px] md:w-[780px] object-cover shadow-lg"
+        className=" max-w-[780px] h-auto md:h-[450px] md:w-[780px] object-cover shadow-lg"
         src="/ArticleImage.svg"
         alt="Article Image"
         />
@@ -74,7 +73,7 @@ function PortfolioArticle() {
             title="Get in touch with us"
             content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."
             linkText="Contact Us"
-            linkUrl="#"
+            linkUrl="/contact-us"
             />
     </section>
 

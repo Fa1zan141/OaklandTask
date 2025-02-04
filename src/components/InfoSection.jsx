@@ -8,11 +8,11 @@ const defaultInfo = {
 
 const InfoSection = ({ title, content, linkText, linkUrl }) => {
   return (
-    <div className="p-6 sm:p-8 md:p-10 lg:w-1/2 w-full">
-      <h2 className="text-[#212529] text-[40px] sm:text-4xl font-400">
+    <div className="p-6 sm:p-0 md:p-10 ">
+      <h2 className="text-[#212529] text-[40px] sm:text-4xl md:text-5xl font-400">
         {title}
       </h2>
-      <p className="w-full text-[#424649] sm:w-[790px] mt-6 text-base text-[18px] leading-[25px] sm:text-lg md:text-xl font-400">
+      <p className="w-full text-[#424649] text-[18px] mt-6 text-base sm:text-lg md:text-[18px] lg:w-[790px] leading-6 sm:leading-7 md:leading-8 font-400">
         {content}
       </p>
       <a

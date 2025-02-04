@@ -1,7 +1,6 @@
 import React from 'react'
 import DarkNavBar from '../components/DarkNavBar'
 import Text from '../components/Text'
-import Footer from '../components/Footer';
 import ImageText from '../components/ImageText';
 function AboutUs() {
     const paragraph1 = "Innovation has been at the heart of our journey right from the beginning. At Oakland C.E., we believe that staying at the forefront of technology and sustainable practices is essential. We’ve consistently sought innovative solutions in energy efficiency, LED lighting, photovoltaic energy, and electric mobility to shape a brighter and greener future.";
@@ -31,7 +30,7 @@ function AboutUs() {
       <div className=" p-20 max-w-full md:grid-cols-2 gap-8 items-center">
         {/* Text Section */}
         <div>
-          <h1 className="text-[40px] w-[780px] text-[#424649] md:text-5xl font-400 mb-20">Innovation. <br /> Guiding our journey from the start.</h1>
+          <h1 className="text-[40px] w-[780px] text-[#424649] md:text-[40px] font-400 mb-20">Innovation. <br /> Guiding our journey from the start.</h1>
           {/* Image Section */}
         {/* Image Section */}
         <ImageText
@@ -40,9 +39,11 @@ function AboutUs() {
         imageSrc="/AboutUsImage.svg"
         imageAlt="Executive Board Meeting"
       />
-        <Text paragraph1={paragraph1} paragraph2={paragraph2} />
-        </div>
       </div>
+        </div>
+    <section className='flex flex-col justify-start items-start mb-20 pl-20 '>
+        <Text paragraph1={paragraph1} paragraph2={paragraph2} />
+    </section>
     </section>
     {/*Image Section Of About US Page*/}
     <section className='flex justify-center pb-20'>

@@ -22,7 +22,7 @@ function DarkNavBar() {
 
   return (
     <>
-      <nav className="flex justify-between items-center p-8 w-full fixed top-0 left-0 z-50 bg-[#F4F4F4]">
+      <nav className="flex justify-between items-center p-8 w-full absolute top-0 left-0 z-50">
         {/* Logo */}
         <img
           src="/DarkLogo.svg"
