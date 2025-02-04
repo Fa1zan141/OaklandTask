@@ -30,12 +30,6 @@ function DarkNavBar() {
           className="h-12 w-72 cursor-pointer"
           onClick={Homenavigate}
         />
-
-        {/* Hamburger Icon for Mobile */}
-        <div className="lg:hidden flex items-center" onClick={toggleMenu}>
-          <Menu className="w-8 h-8 text-[#212529]" /> {/* Lucid Menu icon */}
-        </div>
-
         {/* Navigation Links */}
         <ul
           className={`lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row items-center gap-8 lg:gap-10 text-[#212529] text-[18px] font-Inter`}
@@ -58,6 +52,10 @@ function DarkNavBar() {
             </button>
           </li>
         </ul>
+        {/* Hamburger Icon for Mobile */}
+        <div className="lg:hidden flex items-center" onClick={toggleMenu}>
+          <Menu className="w-8 h-8 text-[#212529]" /> {/* Lucid Menu icon */}
+        </div>
       </nav>
     </>
   );
