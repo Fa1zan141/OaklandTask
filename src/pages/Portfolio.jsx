@@ -70,8 +70,8 @@ function Portfolio() {
           image: "/Image6.svg",
         },
       ...Array.from({ length: 88 }, (_, i) => ({
-        title: `Project ${i + 1}`,
-        category: ["Random Category"],
+        title:  i % 3 === 0 ? ["Car Chargers, Portugal"] : ["Gordon’s BBQ, Las Vegas"],
+        category:  i % 3 === 0 ? ["Electric Mobility"] : ["LED Lighting"],
         image: i % 3 === 0 ? `Image6.svg` : `Image5.svg`,
       }))
       ];
@@ -123,7 +123,7 @@ function Portfolio() {
     <div className=" px-6 lg:px-0 mt-10 flex flex-col sm:flex-row items-start gap-8">
         {/* Innovation */}
         <div className="flex items-center gap-4">
-        <div className="p-3 rounded-lg">
+        <div className="p-0 rounded-lg">
             <img src="Graph.svg" alt="Innovation" className="w-12 h-12" />
         </div>
         <p className="text-[32px] md:text-2xl text-[#212529]">Innovation</p>
@@ -131,7 +131,7 @@ function Portfolio() {
 
         {/* Expertise */}
         <div className="flex items-center gap-4">
-        <div className="p-3 rounded-lg">
+        <div className="p-0 rounded-lg">
             <img src="Profiles.svg" alt="Expertise" className="w-12 h-12" />
         </div>
         <p className="text-[32px] md:text-2xl text-[#212529]">Expertise</p>
@@ -139,7 +139,7 @@ function Portfolio() {
 
         {/* Quality */}
         <div className="flex items-center gap-4">
-        <div className="p-3 rounded-lg">
+        <div className="p-0 rounded-lg">
             <img src="Star.svg" alt="Quality" className="w-12 h-12" />
         </div>
         <p className="text-[32px] md:text-2xl text-[#212529]">Quality</p>

@@ -39,7 +39,7 @@ const HomePageSection = () => {
             <img
               src={area.image}
               alt={area.title}
-              className="w-full h-48 md:h-64 object-cover transform transition duration-500 group-hover:scale-105"
+              className="w-full h[375px] w[320px] object-cover transform transition duration-500 group-hover:scale-105"
             />
             <div className="absolute bottom-0 left-0 w-full text-white p-4 text-[18px] font-400 font-Inter">
               {area.title}
