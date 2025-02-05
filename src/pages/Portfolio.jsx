@@ -39,6 +39,41 @@ function Portfolio() {
           category: ["Electric Mobility"],
           image: "/Image6.svg",
         },
+        {
+          title: "Deloitte Building, London",
+          category: ["Energy Efficiency", "LED Lighting"],
+          image: "/Image1.svg",
+        },
+        {
+          title: "Car Chargers, Oakland",
+          category: ["Electric Mobility"],
+          image: "/Image2.svg",
+        },
+        {
+          title: "Amazon Headquarters, UK",
+          category: ["LED Lighting"],
+          image: "/Image3.svg",
+        },
+        {
+          title: "Astrazeneca Lab Facilities, Nevada",
+          category: ["LED Lighting"],
+          image: "/Image4.svg",
+        },
+        {
+          title: "Gordon’s BBQ, Las Vegas",
+          category: ["Energy Efficiency", "LED Lighting"],
+          image: "/Image5.svg",
+        },
+        {
+          title: "Car Chargers, Portugal",
+          category: ["Electric Mobility"],
+          image: "/Image6.svg",
+        },
+      ...Array.from({ length: 88 }, (_, i) => ({
+        title: `Project ${i + 1}`,
+        category: ["Random Category"],
+        image: i % 3 === 0 ? `Image6.svg` : `Image5.svg`,
+      }))
       ];
       const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -155,7 +190,7 @@ function Portfolio() {
         </div>
 
         {/* Pagination Controls */}
-        <div className="flex justify-end items-end mt-6 space-x-2">
+        <div className="flex lg:flex-row lg:justify-end lg:items-end mt-6 space-x-2">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
             <button
               key={page}
@@ -170,9 +205,6 @@ function Portfolio() {
         </div>
       </div>
     </section>
-
-
-    {/* 2nd Last Section Of Portfolio Page */}
     <section className='px-0 lg:p-10'>
        <InfoSection
             title="Get in touch with us"
