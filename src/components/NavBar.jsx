@@ -10,7 +10,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
 
   return (
     <>
-      <nav className="flex justify-between items-center p-8 w-full absolute top-0 left-0 z-50">
+      <nav className="flex justify-between items-center lg:pl-20 p-10 w-full absolute top-0 left-0 z-50">
         {/* Dynamic Logo */}
         <img
           src={logo}
@@ -20,7 +20,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
         />
 
         {/* Desktop Navigation */}
-        <ul className="hidden lg:flex items-center gap-10 text-lg" style={{ color: textColor }}>
+        <ul className="hidden lg:flex items-center gap-10 text-[18px]" style={{ color: textColor }}>
           <li className="cursor-pointer">
             <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About Us</Link>
           </li>
@@ -34,7 +34,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
             <button
               onClick={() => navigate('/contact-us')}
               style={{ backgroundColor: buttonBgColor, color: buttontext }}
-              className="rounded-full py-2 px-6 cursor-pointer hover:opacity-80 transition"
+              className="text-[18px] rounded-full py-2 px-6 cursor-pointer hover:opacity-80 transition"
             >
               Contact Us
             </button>
@@ -57,7 +57,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
           isMenuOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <ul className="flex flex-col items-center gap-6 py-20" style={{ color: textColor }}>
+        <ul className="flex flex-col items-center gap-6 py-20 " style={{ color: textColor }}>
           <li>
             <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About Us</Link>
           </li>
@@ -73,7 +73,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
                 setIsMenuOpen(false);
                 navigate('/contact-us');
               }}
-              style={{ backgroundColor: buttonBgColor }}
+              style={{ backgroundColor: buttonBgColor, color: buttontext }}
               className="text-black rounded-full py-2 px-6 hover:opacity-80"
             >
               Contact Us
