@@ -53,6 +53,13 @@ function Portfolio() {
           "Energy Efficiency",
           "Electric Mobility",
         ];
+
+      const [currentPage, setCurrentPage] = useState(1);
+      const itemsPerPage=6;
+
+      const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const displayedItems = filteredItems.slice(startIndex, startIndex + itemsPerPage);
   return (
     <>
     {/* Top Section Of Portfolio Page */}
@@ -105,46 +112,63 @@ function Portfolio() {
     </div>
     </section>
 
-    {/* Images Section Of Portfolio Page */}
     <section>
-    <div className="p-6 md:p-10 lg:px-20 bg-[#F4F4F4]">
+      <div className="p-6 md:p-10 lg:px-20 bg-[#F4F4F4]">
         {/* Filter Buttons */}
         <div className="flex flex-wrap gap-3 mb-20">
-        {categories.map((category) => (
+          {categories.map((category) => (
             <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 rounded-full text-[18px] font-400 transition ${
+              key={category}
+              onClick={() => {
+                setSelectedCategory(category);
+                setCurrentPage(1); // Reset to first page on filter change
+              }}
+              className={`px-4 py-2 rounded-full text-[18px] font-400 transition ${
                 selectedCategory === category
-                ? "bg-[#A6A6AB] text-white"
-                : "bg-[#FFFFFF] text-[#212529] hover:bg-[#A6A6AB]"
-            }`}
+                  ? "bg-[#A6A6AB] text-white"
+                  : "bg-[#FFFFFF] text-[#212529] hover:bg-[#A6A6AB]"
+              }`}
             >
-            {category}
+              {category}
             </button>
-        ))}
+          ))}
         </div>
 
+        {/* Grid Display */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredItems.map((item, index) => (
-            <div key={index} className=" rounded-xl overflow-hidden">
-            {/* Image */}
-            <img
+          {displayedItems.map((item, index) => (
+            <div key={index} className="rounded-xl overflow-hidden">
+              {/* Image */}
+              <img
                 src={item.image}
                 alt={item.title}
                 className="w-[425px] h-[400px] object-cover cursor-pointer"
                 onClick={PortfolioArticlenavigate}
-            />
-            {/* Text Content */}
-            <div className="pt-6">
-                <h3 className="text-[18px] font-400 text-[#212529] ">{item.title}</h3>
+              />
+              {/* Text Content */}
+              <div className="pt-6">
+                <h3 className="text-[18px] font-400 text-[#212529]">{item.title}</h3>
                 <p className="text-[14px] text-[#424649] mt-2">{item.category.join(", ")}</p>
+              </div>
             </div>
-            </div>
-        ))}
+          ))}
         </div>
 
-    </div>
+        {/* Pagination Controls */}
+        <div className="flex justify-end items-end mt-6 space-x-2">
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+            <button
+              key={page}
+              onClick={() => setCurrentPage(page)}
+              className={`px-3 py-1 rounded-full text-[16px] font-400 transition ${
+                currentPage === page ? "bg-[#A6A6AB] text-white" : "bg-[#FFFFFF] text-[#212529] hover:bg-[#A6A6AB]"
+              }`}
+            >
+              {page}
+            </button>
+          ))}
+        </div>
+      </div>
     </section>
 
 
