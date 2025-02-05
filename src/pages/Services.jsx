@@ -1,5 +1,4 @@
 import { useState } from "react";
-import NavBar from '../components/NavBar'
 import {ArrowDown} from 'lucide-react'
 import { motion } from "framer-motion";
 import ImageText from '../components/ImageText';
@@ -23,7 +22,6 @@ function Services() {
     <>
      {/*Top Section Of Services Page*/}
      <div className="flex flex-col justify-end items-start h-screen bg-[#212529]">
-      <NavBar />
       <section className="flex flex-col items-start sm:px-10 px-4 md:px-16 ">
         <h1 className="text-[64px] sm:text-5xl text-[#FFFFFF] mb-6 font-400">
         Services

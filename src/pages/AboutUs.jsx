@@ -1,5 +1,3 @@
-import React from 'react'
-import DarkNavBar from '../components/DarkNavBar'
 import Text from '../components/Text'
 import ImageText from '../components/ImageText';
 function AboutUs() {
@@ -12,7 +10,6 @@ function AboutUs() {
     <>
      {/*Top Section Of About US Page*/}
      <div className="flex flex-col justify-end items-start h-screen bg-[#F4F4F4]">
-      <DarkNavBar />
       <section className="flex flex-col px-6 items-start sm:px-10 md:px-20 ">
         <h1 className="text-[48px] sm:text-5xl text-[#212529] mb-12 font-400">
           About Us

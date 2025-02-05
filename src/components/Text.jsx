@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Text({ paragraph1, paragraph2, paragraph3, paragraph4 }) {
   return (
     <>

@@ -1,7 +1,5 @@
 import {useState} from 'react';
-import NavBar from '../components/NavBar';
 import InfoSection from '../components/InfoSection';
-import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 
 function Portfolio() {
@@ -59,7 +57,6 @@ function Portfolio() {
     <>
     {/* Top Section Of Portfolio Page */}
       <div className="flex flex-col justify-end items-start h-screen bg-[url(/PortfolioBg.svg)] bg-cover bg-center">
-        <NavBar />
         <section className="flex flex-col items-start px-4 sm:px-10 md:px-16 py-8 md:py-16">
           <h1 className="text-[48px] sm:text-5xl text-[#ffffff] mb-12 font-400">
             Portfolio

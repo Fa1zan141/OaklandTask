@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react'; 
 
-function NavBar() {
+function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,29 +11,30 @@ function NavBar() {
   return (
     <>
       <nav className="flex justify-between items-center p-8 w-full absolute top-0 left-0 z-50">
-        {/* Logo */}
+        {/* Dynamic Logo */}
         <img
-          src="/Logo.svg"
+          src={logo}
           alt="Logo"
           className="h-12 w-auto cursor-pointer"
           onClick={() => navigate('/')}
         />
 
         {/* Desktop Navigation */}
-        <ul className="hidden lg:flex items-center gap-10 text-white text-lg">
+        <ul className="hidden lg:flex items-center gap-10 text-lg" style={{ color: textColor }}>
           <li className="cursor-pointer">
-            <Link to="/about-us" className="hover:underline">About Us</Link>
+            <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About Us</Link>
           </li>
           <li className="cursor-pointer">
-            <Link to="/services" className="hover:underline">Services</Link>
+            <Link to="/services" className="hover:underline" style={{ color: textColor }}>Services</Link>
           </li>
           <li className="cursor-pointer">
-            <Link to="/portfolio" className="hover:underline">Portfolio</Link>
+            <Link to="/portfolio" className="hover:underline" style={{ color: textColor }}>Portfolio</Link>
           </li>
           <li>
             <button
               onClick={() => navigate('/contact-us')}
-              className="bg-white text-black rounded-full py-2 px-6 cursor-pointer hover:bg-gray-200 transition"
+              style={{ backgroundColor: buttonBgColor, color: buttontext }}
+              className="rounded-full py-2 px-6 cursor-pointer hover:opacity-80 transition"
             >
               Contact Us
             </button>
@@ -43,9 +44,9 @@ function NavBar() {
         {/* Mobile/Tablet Navigation Icon */}
         <div className="lg:hidden flex items-center">
           {isMenuOpen ? (
-            <X className="w-8 h-8 text-white" onClick={toggleMenu} />
+            <X className="w-8 h-8" style={{ color: textColor }} onClick={toggleMenu} />
           ) : (
-            <Menu className="w-8 h-8 text-white" onClick={toggleMenu} />
+            <Menu className="w-8 h-8" style={{ color: textColor }} onClick={toggleMenu} />
           )}
         </div>
       </nav>
@@ -56,15 +57,15 @@ function NavBar() {
           isMenuOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <ul className="flex flex-col items-center gap-6 py-20 text-white">
+        <ul className="flex flex-col items-center gap-6 py-20" style={{ color: textColor }}>
           <li>
-            <Link to="/about-us" className="hover:underline">About Us</Link>
+            <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About Us</Link>
           </li>
           <li>
-            <Link to="/services" className="hover:underline">Services</Link>
+            <Link to="/services" className="hover:underline" style={{ color: textColor }}>Services</Link>
           </li>
           <li>
-            <Link to="/portfolio" className="hover:underline">Portfolio</Link>
+            <Link to="/portfolio" className="hover:underline" style={{ color: textColor }}>Portfolio</Link>
           </li>
           <li>
             <button
@@ -72,7 +73,8 @@ function NavBar() {
                 setIsMenuOpen(false);
                 navigate('/contact-us');
               }}
-              className="bg-white text-black rounded-full py-2 px-6 hover:bg-gray-200"
+              style={{ backgroundColor: buttonBgColor }}
+              className="text-black rounded-full py-2 px-6 hover:opacity-80"
             >
               Contact Us
             </button>

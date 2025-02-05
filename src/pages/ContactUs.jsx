@@ -1,10 +1,9 @@
-import DarkNavBar from '../components/DarkNavBar'
 function ContactUs() {
   return (
     <>
      {/*Top Section Of Contact US Page*/}
      <div className="flex flex-col justify-end items-start h-screen bg-[#F4F4F4]">
-      <DarkNavBar />
+      
       <section className="flex flex-col items-start sm:px-10 px-4 md:px-16 ">
         <h1 className="text-[48px] sm:text-5xl text-[#212529] mb-12 font-400">
         Contact us

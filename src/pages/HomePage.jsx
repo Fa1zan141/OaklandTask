@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
 import Button from '../components/Button';
 import HomePageSection from '../components/HomePageSection';
 import InfoSection from '../components/InfoSection';
-import NavBar from '../components/NavBar';
+
 
 function HomePage() {
 
@@ -11,7 +10,7 @@ function HomePage() {
       {/* Home Page Section */}
        {/*Top Section Of About US Page*/}
      <div className="flex flex-col justify-end items-start h-screen bg-[url(/HomeBg.svg)] bg-cover bg-no-repeat">
-      <NavBar />
+      
       <section className="flex flex-col items-start sm:px-10 px-4 md:px-16 ">
       <div className="text-white gap-6 flex flex-col pb-12 px-4 md:px-0">
             <h1 className="text-[40px] md:text-[64px] font-light leading-tight md:leading-[77px]">

@@ -1,14 +1,10 @@
-import React from 'react';
-import DarkNavBar from '../components/DarkNavBar';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import InfoSection from '../components/InfoSection';
 function PortfolioArticle() {
   return (
     <>
       {/* Top Section of Portfolio Article Page */}
-<DarkNavBar />
-
-<div className="flex flex-col justify-end items-start gap-4 sm:gap-6 pb-10 sm:pt-[400px] px-10 lg:px-10 sm:px-8 md:px-16 items-start justify-start min-h-screen bg-[#F4F4F4]">
+<div className="flex flex-col justify-end items-start gap-4 sm:gap-6 pb-10 sm:pt-[400px] px-10 lg:px-10 sm:px-8 md:px-16  min-h-screen bg-[#F4F4F4]">
   
   {/* Portfolio Tagline */}
   <div className="text-[#A6A6AB] uppercase tracking-widest text-[14px] sm:text-[16px] md:text-[18px]">
