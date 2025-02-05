@@ -22,8 +22,8 @@ const HomePageSections = [
 const HomePageSection = () => {
   return (
     <section>
-      <div className="flex flex-col gap-6 p-8 sm:p-10 md:p-10">
-        <h2 className="text-[#212529] text-[40px] md:text-[40px] font-medium font-Inter">Areas of Expertise</h2>
+      <div className="flex flex-col gap-6 p-8 lg:pl-20 sm:p-10 md:p-10">
+        <h2 className="text-[#212529] text-[40px] md:text-[40px]">Areas of Expertise</h2>
         <p className="text-[#424649] max-w-full text-[18px] sm:max-w-xl">
           Whether for small or large-scale projects, we are committed to delivering cutting-edge results, contributing to a more sustainable and innovative energy future.
         </p>

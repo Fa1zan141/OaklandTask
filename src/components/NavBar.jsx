@@ -20,7 +20,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
         />
 
         {/* Desktop Navigation */}
-        <ul className="hidden lg:flex items-center gap-10 text-[18px]" style={{ color: textColor }}>
+        <ul className="hidden lg:flex items-center gap-10 text-[18px] font-400" style={{ color: textColor }}>
           <li className="cursor-pointer">
             <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About Us</Link>
           </li>
@@ -34,7 +34,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
             <button
               onClick={() => navigate('/contact-us')}
               style={{ backgroundColor: buttonBgColor, color: buttontext }}
-              className="text-[18px] rounded-full py-2 px-6 cursor-pointer hover:opacity-80 transition"
+              className="text-[18px] font-400 rounded-full py-2 px-6 cursor-pointer hover:opacity-80 transition"
             >
               Contact Us
             </button>
@@ -53,7 +53,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
 
       {/* Mobile/Tablet Navigation */}
       <nav
-        className={`lg:hidden sm:hidden absolute top-20 left-0 w-full transition-transform duration-300 ${
+        className={`lg:hidden font-400 sm:hidden absolute top-20 left-0 w-full transition-transform duration-300 ${
           isMenuOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
@@ -74,7 +74,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
                 navigate('/contact-us');
               }}
               style={{ backgroundColor: buttonBgColor, color: buttontext }}
-              className="text-black rounded-full py-2 px-6 hover:opacity-80"
+              className="text-black font-400 rounded-full py-2 px-6 hover:opacity-80"
             >
               Contact Us
             </button>
