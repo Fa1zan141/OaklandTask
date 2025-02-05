@@ -190,7 +190,7 @@ function Portfolio() {
         </div>
 
         {/* Pagination Controls */}
-        <div className="flex lg:flex-row lg:justify-end lg:items-end mt-6 space-x-2">
+        <div className="flex overflow-x-auto lg:flex-row lg:justify-end lg:items-end mt-6 space-x-2">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
             <button
               key={page}
