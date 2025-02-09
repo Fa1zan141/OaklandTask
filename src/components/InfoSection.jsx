@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const defaultInfo = {
   title: "Deep knowledge in the field",
   content:
@@ -15,12 +16,13 @@ const InfoSection = ({ title, content, linkText, linkUrl }) => {
       <p className="w-full text-[#424649] text-[18px] mt-6 text-base sm:text-lg md:text-[18px] lg:w-[790px] leading-6 sm:leading-7 md:leading-8 font-400">
         {content}
       </p>
-      <a
-        href={linkUrl}
+      <Link
+        to={linkUrl}
         className="mt-4 inline-block text-[#212529] font-medium hover:underline"
       >
         {linkText} →
-      </a>
+      </Link>
+
     </div>
   );
 };
