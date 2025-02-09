@@ -55,9 +55,9 @@ function PortfolioArticle() {
     </div>
 
     {/* Right Image - Smaller */}
-    <div className="flex justify-around">
+    <div className="flex justify-end lg:mr-20">
         <img
-        className="w-full max-w-[780px] h-auto md:h-[450px] object-cover shadow-lg"
+        className="w-full max-w-[980px] h-auto md:h-[450px] object-cover shadow-lg"
         src="/ArticleImage.svg"
         alt="Article Image"
         />
