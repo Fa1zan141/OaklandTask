@@ -34,7 +34,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
             <button
               onClick={() => navigate('/contact-us')}
               style={{ backgroundColor: buttonBgColor, color: buttontext }}
-              className="text-[18px] font-400 rounded-full py-2 px-6 cursor-pointer hover:opacity-80 transition"
+              className="text-[18px] font-400 rounded-full py-2 px-6 cursor-pointer hover:opacity-20 transition"
             >
               Contact us
             </button>
@@ -74,7 +74,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
                 navigate('/contact-us');
               }}
               style={{ backgroundColor: buttonBgColor, color: buttontext }}
-              className="text-black font-400 rounded-full py-2 px-6 hover:opacity-80"
+              className="text-black font-400 rounded-full py-2 px-6 hover:opacity-30"
             >
               Contact us
             </button>

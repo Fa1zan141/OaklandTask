@@ -65,7 +65,7 @@ function PortfolioArticle() {
     </section>
 
     {/* 4th Section of Portfolio Article Page */}
-    <section className='p-2 lg:p-0'>
+    <section className='p-2 lg:p-0 mb-20'>
     <InfoSection
             title="Get in touch with us"
             content="If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals."

@@ -44,7 +44,7 @@ function ContactUs() {
             <input type="checkbox" className="w-5 h-5" />
             <label className="text-[#424649] font-400 text-[18px] lg:mt-0 sm:mt-0 mt-6 ">I consent to Oakland C.E. processing my data for contact purposes.</label>
           </div>
-          <button type="submit" className="w-[120px] px-6 py-3 bg-[#212529] text-[#FFFFFF] rounded-full hover:bg-[#212529] ">Send</button>
+          <button type="submit" className="w-[120px] px-6 py-3 bg-[#212529] text-[#FFFFFF] rounded-full hover:bg-[#FFFFFF4D] hover:text-[#212529]">Send</button>
         </form>
       </div>
     </div>
