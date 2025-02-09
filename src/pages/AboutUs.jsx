@@ -14,7 +14,7 @@ function AboutUs() {
         <h1 className="text-[48px] sm:text-5xl text-[#212529] mb-12 font-400">
           About Us
         </h1>
-        <p className="text-[16px] sm:text-xl text-[#424649] text-left font-400 leading-[25px] max-w-[540px] pb-[100px] sm:pb-20">
+        <p className="text-[16px] sm:text-xl text-[#424649] text-left font-400 leading-[25px] max-w-[600px] pb-[100px] sm:pb-12">
           Learn more about Oakland C.E. and our commitment to excellence, innovation, and sustainability.
         </p>
       </section>
@@ -35,22 +35,37 @@ function AboutUs() {
         {/* Image Section */}
         <ImageText
         text="Executive Board members" 
-        span= "Oakland, 2023"
+        span= "Oakland. 2023"
         imageSrc="/AboutUsImage.svg"
         imageAlt="Executive Board Meeting"
       />
       </div>
         </div>
-    <section className='flex flex-col justify-start items-start mb-20 lg:pl-20 pl-6'>
+    </section>
+    <section className='flex flex-col justify-start items-start lg:pl-20 pl-6'>
         <Text paragraph1={paragraph1} paragraph2={paragraph2} />
     </section>
-    </section>
+
+
     {/*Image Section Of About US Page*/}
-    <section className='flex justify-center pb-20'>
-        <img src="/AboutUs.svg" alt="Image" />
+    <section className="relative flex justify-center items-center pb-20 p-6 lg:p-20 max-w-full">
+      <div className="relative w-full">
+        <img 
+          src="/AboutUsBgImage.svg" 
+          alt="Image" 
+          className="w-full h-auto object-cover" 
+        />
+        
+        <div className="absolute inset-0 flex justify-center items-center">
+          <p className="text-white text-xl md:text-2xl lg:text-[40px] text-center px-4 font-400 ">
+            Building the future of energy evolution
+          </p>
+        </div>
+      </div>
     </section>
+
     {/*Text Section Of About US Page*/}
-    <section className='flex justify-end items-end mb-20'>
+    <section className='flex justify-end items-end mb-32 pl-6'>
     <Text paragraph3={paragraph3} paragraph4={paragraph4} />
     </section>
 

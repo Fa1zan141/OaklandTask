@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Menu, X } from 'lucide-react'; // Import Lucid's Menu and X icons
+import { Menu, X } from 'lucide-react'; 
 
 function DarkNavBar() {
   const navigate = useNavigate();

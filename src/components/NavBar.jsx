@@ -22,7 +22,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
         {/* Desktop Navigation */}
         <ul className="hidden lg:flex items-center gap-10 text-[18px] font-400" style={{ color: textColor }}>
           <li className="cursor-pointer">
-            <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About Us</Link>
+            <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About us</Link>
           </li>
           <li className="cursor-pointer">
             <Link to="/services" className="hover:underline" style={{ color: textColor }}>Services</Link>
@@ -36,7 +36,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
               style={{ backgroundColor: buttonBgColor, color: buttontext }}
               className="text-[18px] font-400 rounded-full py-2 px-6 cursor-pointer hover:opacity-80 transition"
             >
-              Contact Us
+              Contact us
             </button>
           </li>
         </ul>
@@ -59,7 +59,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
       >
         <ul className="flex flex-col items-center gap-6 py-20 " style={{ color: textColor }}>
           <li>
-            <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About Us</Link>
+            <Link to="/about-us" className="hover:underline" style={{ color: textColor }}>About us</Link>
           </li>
           <li>
             <Link to="/services" className="hover:underline" style={{ color: textColor }}>Services</Link>
@@ -76,7 +76,7 @@ function NavBar({ logo, buttonBgColor, textColor, buttontext }) {
               style={{ backgroundColor: buttonBgColor, color: buttontext }}
               className="text-black font-400 rounded-full py-2 px-6 hover:opacity-80"
             >
-              Contact Us
+              Contact us
             </button>
           </li>
         </ul>

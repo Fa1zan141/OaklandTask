@@ -23,7 +23,7 @@ function Services() {
      {/*Top Section Of Services Page*/}
      <div className="flex flex-col justify-end items-start h-screen bg-[#212529]">
       <section className="flex flex-col items-start sm:px-10 px-4 md:px-16 ">
-        <h1 className="text-[64px] sm:text-5xl text-[#FFFFFF] mb-6 font-400">
+        <h1 className="text-[64px] sm:text-5xl text-[#FFFFFF] mb-12 font-400">
         Services
         </h1>
         <p className="text-[18px] sm:text-xl text-[#FFFFFF] text-left font-400 leading-[25px] max-w-[640px] pb-[100px] sm:pb-20">
@@ -36,7 +36,7 @@ function Services() {
 <section>
   <div className="p-4 sm:p-8 lg:p-20 w-full">
     {sections.map((section, index) => (
-      <div key={index} className="border-t border-gray-700">
+      <div key={index} className="border-t border-gray-400">
         <button
           className="w-full flex justify-between items-center py-4 px-2 text-[24px] sm:text-[36px] lg:text-[48px] font-400 text-[#212529] transition-all"
           onClick={() => toggleSection(index)}
@@ -61,7 +61,7 @@ function Services() {
   </div>
 </section>
     {/*Image Section Of Services Page*/}
-    <section>
+    <section className="px-6 lg:p-20 max-w-full gap-8 items-center ">
       <ImageText
       text="Sustainable energy consulting" 
       span= "Portugal. 2023"

@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
             </div>
             {/* Row1 Col2 */}
-            <div className='flex justify-center mt-4 md:justify-end items-start md:w-[40%]'>
+            <div className='flex justify-center md:justify-end items-start md:w-[40%]'>
                 <img src="./FooterImage.svg" alt="Footer image" />
             </div>
 
